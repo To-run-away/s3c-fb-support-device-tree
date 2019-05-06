@@ -1434,7 +1434,7 @@ static int s3c_fb_probe(struct platform_device *pdev)
         return -ENOMEM;
     }
 	
-	/* form device tree get lcd time information */
+	/* from device tree get lcd time information */
     of_property_read_u32(np,"right_margin" , &pd->vtiming->right_margin);
     of_property_read_u32(np,"left_margin" , &pd->vtiming->left_margin);
     of_property_read_u32(np,"upper_margin" , &pd->vtiming->upper_margin);
